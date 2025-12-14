@@ -7,3 +7,11 @@ A lightweight, offline browser extension for generating, validating, and identif
 - Validate any 10-digit national code.
 - Detect city/province from the first three digits.
 - Copy generated code to clipboard.
+
+## Installation
+
+### Firefox
+1. Visit the [Firefox Add-ons page](https://addons.mozilla.org/en-US/firefox/addon/iranian-national-code/).
+
+### Chrome
+1. Visit the [Chrome Web Store page](#).
