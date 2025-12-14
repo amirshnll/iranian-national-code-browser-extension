@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ابزار کد ملی ایران</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">ابزار کد ملی ایران</h1>
+
+    <section class="card">
+      <div class="card-title">تولید کد ملی رندوم</div>
+      <div class="row">
+        <input id="gen-output" class="input" type="text" readonly>
+        <button id="btn-generate" class="btn">تولید</button>
+        <button id="btn-copy" class="btn secondary">کپی</button>
+      </div>
+      <div id="gen-msg" class="msg"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-title">اعتبارسنجی کد ملی</div>
+      <div class="row">
+        <input id="validate-input" class="input" type="text" placeholder="مثال: 1234567890">
+        <button id="btn-validate" class="btn">اعتبارسنجی</button>
+      </div>
+      <div id="validate-result" class="msg"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-title">تشخیص منطقه/شهر از سه رقم اول</div>
+      <div class="row">
+        <input id="region-input" class="input" type="text" placeholder="کد ملی یا سه رقم اول">
+        <button id="btn-region" class="btn">تشخیص</button>
+      </div>
+      <div id="region-result" class="msg"></div>
+    </section>
+  </div>
+
+  <script src="popup.js"></script>
+  <p class="footer">
+    ©<span id="year"></span>
+    <a href="https://github.com/amirshnll/iranian-national-code-browser-extension" target="_blank" rel="noopener noreferrer">Iranian National Code Browser Extension</a>
+    | MIT License | <span id="version"></span> |
+    <a href="https://ashokri.com/donate" target="_blank" title="Donate" rel="noopener noreferrer">Donate</a>.
+  </p>
+</body>
+
+</html>
