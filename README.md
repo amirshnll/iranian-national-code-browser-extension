@@ -15,3 +15,13 @@ A lightweight, offline browser extension for generating, validating, and identif
 
 ### Chrome
 1. Visit the [Chrome Web Store page](https://chromewebstore.google.com/detail/iranian-national-code/miihfmhaigckmekpfldahhegadpbcbin).
+
+## Development
+
+Edit the shared source files in the src folder. The browser folders only keep their manifest files and link to the shared source through src/:
+
+```bash
+bash scripts/sync-shared-source.sh
+```
+
+The script wires the shared UI, logic, and assets into both chrome/src and firefox/src so you only need to maintain one source.
